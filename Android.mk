@@ -12,4 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include $(call all-subdir-makefiles)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),endeavoru)
+    include $(call all-subdir-makefiles)
+endif
